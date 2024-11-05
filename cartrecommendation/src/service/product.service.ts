@@ -1,4 +1,4 @@
-import { Product, ProductProjection } from "@commercetools/platform-sdk";
+import { ProductProjection } from "@commercetools/platform-sdk";
 import { getProductsBySku } from "../repository/productProjections.repository ";
 
 export const fetchProducts = async (recommended_product: string[]): Promise<ProductProjection[]> => {

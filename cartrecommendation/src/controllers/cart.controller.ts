@@ -19,8 +19,7 @@ export const post = async (request: Request, response: Response) => {
 
     // Fetch all recommended products based on the SKUs
     const allRecommendedProducts = await fetchProducts(recommended_product_skus);
-    console.log('All Recommended Products:', allRecommendedProducts);
-
+   
     // Get unique products from the recommended list
     const uniqueProducts = uniqueRecommendedProducts(allRecommendedProducts);
 
